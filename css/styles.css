@@ -1,0 +1,65 @@
+/* Style untuk header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f4f4f4;
+  padding: 10px 20px;
+}
+
+/* Logo */
+.logo img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%; /* opsional kalau mau bulat */
+}
+
+/* Navbar */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background: #8B4513;
+  color: white;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover {
+  background: #A0522D;
+}
+/* Terapkan ke semua halaman */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2, h3 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+h2::after, h3::after {
+  content: "";
+  display: block;
+  width: 300px;         /* panjang garis */
+  height: 3px;         /* tebal garis */
+  background-color: #8B4513; /* warna kopi */
+  margin-top: 5px;
+}
+.about, .vision {
+  border-left: 5px solid #8B4513;
+  padding-left: 20px;
+  margin: 40px 0;
+  background: #fdf8f4;
+}
